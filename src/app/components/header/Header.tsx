@@ -12,7 +12,7 @@ export default function Header() {
 
   const handleClick = () => {
     setActiveState((prev) => !prev);
-    document.body.classList.add("dis-scroll");
+    // document.body.classList.add("dis-scroll");
   };
   return (
     <header className={styles.header}>

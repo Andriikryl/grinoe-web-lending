@@ -29,6 +29,7 @@ li{
 }
 
 body {
+  background: var(--black, #0F0F0F);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }

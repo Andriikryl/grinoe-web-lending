@@ -1,0 +1,102 @@
+.hero{
+    background: var(--black, #0F0F0F);
+    height: 100dvh;
+}
+
+.hero__box{
+    padding-block: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex__group{
+    display: flex;
+    align-items: center;
+}
+
+.flex__group div:nth-child(2){
+    margin-inline-start: -100px;
+    margin-block-end: 110px;
+}
+
+.hero__info{
+    margin-bottom: 100px;
+}
+
+.hero__title{
+    color: #FFF;
+    font-size: clamp(24px, 5vw + 1rem, 60px);
+    font-family: TT Hoves;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-block-end: 14px;
+    text-wrap: balance;
+}
+
+.hero__subTitle{
+    color: var(--white, #FFF);
+    font-size: clamp(17px, 2vw + 1rem, 30px);
+    font-family: TT Hoves;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin-block-end: 27px;
+    display: block;
+    text-wrap: balance;
+}
+
+.btn__group{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-block-end: 14px
+}
+
+.hero__descr{
+    color: #B3B3B3;
+    font-size: 22.836px;
+    font-family: TT Hoves;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-wrap: balance;
+}
+
+.hero__btnM{
+    display: none;
+    padding: 14px 69px;
+    border-radius: 10px;
+    background: linear-gradient(330deg, #BFEA81 0%, #DAFFA5 100%);
+    box-shadow: 0px 14.532221794128418px 77.85118865966797px 0px rgba(191, 234, 129, 0.13);
+    color: var(--black, #0F0F0F);
+    text-align: center;
+    font-size: 18.684px;
+    font-family: TT Hoves;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    margin-block-end: 14px;
+}
+
+@media (max-width: 1100px) {
+    .hero__box{
+        padding-block: 60px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 31px;
+    }
+    .btn__group{
+        display: none;
+    }
+    .hero__btnM{
+        display: block;
+        margin-inline: auto;
+    }
+}
