@@ -1,13 +1,12 @@
 import { Container } from "@/app/components/container/Container";
 import React from "react";
 import HeroImage from "public/hero/hero-fone.png";
-import HeroCard from "public/hero/hero-card.png";
 import styles from "./style.module.css";
 import Image from "next/image";
 import AppBtn from "@/app/components/btns/AppBtn";
 import GoogleBtn from "@/app/components/btns/GoogleBtn";
 import Qcod from "@/app/icons/Qcod";
-import { TiltEffect } from "./CardEff";
+import { CardEff } from "./CardEff";
 
 export default function Hero() {
   return (
@@ -15,7 +14,7 @@ export default function Hero() {
       <Container>
         <div className={styles.hero__box}>
           <div className={styles.flex__group}>
-            <div>
+            <div className={styles.hero__img}>
               <Image
                 src={HeroImage}
                 width={236}
@@ -23,10 +22,7 @@ export default function Hero() {
                 alt="mobile fhone"
               />
             </div>
-            {/* <div>
-              <Image src={HeroCard} width={277} height={172} alt="card" />
-            </div> */}
-            <TiltEffect />
+            <CardEff />
           </div>
           <div className={styles.hero__info}>
             <h1 className={styles.hero__title}>Future of Personal Finance</h1>

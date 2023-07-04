@@ -3,6 +3,7 @@
 import { useState, MouseEvent, useCallback } from "react";
 import HeroCard from "public/hero/hero-card.png";
 import Image from "next/image";
+import styles from "./style.module.css";
 
 function throttle<T extends (...args: any[]) => any>(
   func: T,
@@ -19,7 +20,7 @@ function throttle<T extends (...args: any[]) => any>(
   };
 }
 
-export const TiltEffect = () => {
+export const CardEff = () => {
   const [rotate, setRotate] = useState({ x: 0, y: 0 });
 
   const onMouseMove = useCallback(
@@ -45,6 +46,7 @@ export const TiltEffect = () => {
   return (
     <>
       <div
+        className={styles.shadow__box}
         onMouseMove={onMouseMove}
         onMouseLeave={onMouseLeave}
         style={{
@@ -52,7 +54,8 @@ export const TiltEffect = () => {
           transition: "all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s",
         }}
       >
-        <div>
+        <div className={styles.gradient__shadow}></div>
+        <div className={styles.content}>
           <Image src={HeroCard} width={277} height={172} alt="card" />
         </div>
       </div>

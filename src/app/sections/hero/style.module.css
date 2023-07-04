@@ -17,8 +17,8 @@
 }
 
 .flex__group div:nth-child(2){
-    margin-inline-start: -100px;
-    margin-block-end: 110px;
+    margin-inline-start: -50px;
+    margin-block-end: 57px;
 }
 
 .hero__info{
@@ -86,7 +86,7 @@
 
 @media (max-width: 1100px) {
     .hero__box{
-        padding-block: 60px;
+        padding-block: 0px;
         flex-direction: column;
         justify-content: center;
         text-align: center;
@@ -99,4 +99,37 @@
         display: block;
         margin-inline: auto;
     }
+}
+
+.shadow__box{
+    position: relative;
+}
+
+.gradient__shadow{
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    bottom: 3.5rem;
+    left: -4.5rem;
+    background: linear-gradient(to right, #ca8a04, #ea580c, #dc2626);
+    border-radius: 0.5rem;
+    opacity: 0.8;
+    filter: blur(20px);
+}
+
+.content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    color: #cbd5e1;
+}
+
+.content img{
+    object-fit: contain;
+}
+
+.hero__img img{
+    object-fit: contain;
 }
