@@ -1,0 +1,19 @@
+.btn{
+    padding: 14px 41px;
+    border-radius: 10px;
+    background: linear-gradient(330deg, #BFEA81 0%, #DAFFA5 100%);
+    box-shadow: 0px 14.532221794128418px 77.85118865966797px 0px rgba(191, 234, 129, 0.13);
+    color: var(--black, #0F0F0F);
+    text-align: center;
+    font-size: 18.684px;
+    font-family: TT Hoves;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}

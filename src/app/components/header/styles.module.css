@@ -1,0 +1,39 @@
+
+.header{
+    background-color: hsla(0, 0%, 6%, 1);
+    padding-block: 20px;
+}
+
+.header__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav__list{
+    display: flex;
+    gap: 30px;
+}
+
+.list__link{
+    color: var(--gray, #B3B3B3);
+    font-size: 18px;
+    font-family: TT Hoves;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: capitalize;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.flex__group{
+    display: flex;
+    gap: 20px;
+}

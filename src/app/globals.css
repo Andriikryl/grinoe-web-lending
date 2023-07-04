@@ -1,9 +1,18 @@
+:root {
+  --gray: hsla(0, 0%, 70%, 1);   
+  --black: hsla(0, 0%, 6%, 1);
+  --green: hsla(85, 71%, 71%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 * {
   margin: 0;
+  padding: 0;
 }
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
