@@ -1,0 +1,115 @@
+.coins{
+    margin-block-end: 200px;
+}
+
+.coins__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: #202020;
+    backdrop-filter: blur(5px);
+    max-width: 628px;
+    padding-block: 40px;
+}
+
+.coins__card{
+    position: relative;
+    top: -40px;
+    left: 64px;
+    z-index: -1;
+}
+
+.coins__card img{
+    object-fit: contain;
+}
+.coins__phone img{
+    object-fit: contain;
+}
+
+.coins__info{
+    border-radius: 30px;
+    background: #151515;
+    backdrop-filter: blur(5px);
+    max-width: 628px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 60px;
+}
+
+.coins__title{
+    color: #FFF;
+    text-align: center;
+    font-size: 50px;
+    font-family: TT Hoves;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-block-end: 50px;
+}
+
+.coins__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 443px;
+    margin-block-end: 60px;
+}
+
+.coins__item{
+    padding: 15px 54px;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 33.856px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), linear-gradient(225deg, rgba(214, 211, 194, 0.20) 0%, rgba(92, 92, 92, 0.14) 100%);
+    box-shadow: -1.478381633758545px -0.9129853844642639px 2.392021417617798px 0px rgba(250, 250, 250, 0.22) inset;
+    backdrop-filter: blur(6.3903326988220215px);
+}
+
+.coins__descr{
+    color: #FFF;
+    font-size: 24px;
+    font-family: TT Hoves;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.coins__btn{
+    padding: 19px 70px;
+
+    color: #0F0F0F;
+    text-align: center;
+    font-size: 18.684px;
+    font-family: TT Hoves;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+
+    border-radius: 10px;
+    background: linear-gradient(330deg, #BFEA81 0%, #DAFFA5 100%);
+    box-shadow: 0px 14.532221794128418px 77.85118865966797px 0px rgba(191, 234, 129, 0.13);
+
+    cursor: pointer;
+    border: none;
+}
+
+.box{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coins__box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 40ch), 1fr));
+    gap: 30px;
+}
