@@ -1,0 +1,120 @@
+.app{
+    margin-block-end: 200px;
+    position: relative;
+    z-index: 30;
+}
+
+.app::after{
+    display: block;
+    content: "";
+    border-radius: 551px;
+    background: rgba(193, 255, 104, 0.20);
+    filter:  blur(250px);
+    width: 551px;
+    height: 551px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -2;
+}
+
+.app::before{
+    display: block;
+    content: "";
+    background: linear-gradient(hsla(0, 0%, 13%, .4), hsla(0, 0%, 26%, .4));
+    backdrop-filter: blur(20px);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 654px;
+    height: 302px;
+    position: absolute;
+    right: 0px;
+    top: 232px;
+    z-index: -1;
+}
+
+@media (max-width:930px) {
+   .app::before{
+    top: auto;
+    bottom: 100px;
+   } 
+}
+
+
+.app__title{
+    color: var(--white, #FFF);
+    font-size: 60px;
+    font-family: TT Hoves;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-block-end: 90px;
+}
+
+.app__list{
+    margin-block-end: 50px;
+    max-width: 500px;
+    margin-inline-start: 120px;
+}
+
+.list__item{
+    color: #FFF;
+    font-size: 25.442px;
+    font-family: TT Hoves;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-block-start: 1px solid hsla(0, 0%, 70%, 1);
+    padding-block: 19px;
+    position: relative;
+}
+
+.list__item::before {
+    content: '0' counter(list-item) '';
+    display: block;
+    width: 100px;
+    color: #FFF;
+    font-size: 25.442px;
+    font-family: TT Hoves;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-block-start: 1px solid hsla(0, 0%, 70%, 1);
+    padding-block: 19px;
+    position: absolute;
+    left: -120px;
+    top: -1px;
+  }
+
+.flex__group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px;
+}
+
+.box{
+    padding: 5px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.20);
+    aspect-ratio: 1/1;
+}
+
+.box img{
+    object-fit: cover;
+}
+
+.app__img{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+
+
+.app__box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 60ch), 1fr));
+    gap: 70px;
+}
