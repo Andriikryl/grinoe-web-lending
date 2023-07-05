@@ -1,6 +1,7 @@
 .hero{
     background: var(--black, #0F0F0F);
     height: 100dvh;
+    margin-block-end: 200px;
 }
 
 .hero__box{

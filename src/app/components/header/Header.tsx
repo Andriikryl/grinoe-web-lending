@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from "../container/Container";
 import Logo from "@/app/icons/Logo";
 import styles from "./styles.module.css";
@@ -10,9 +10,13 @@ import BurgerButton from "./BurgerButton";
 export default function Header() {
   const [activeState, setActiveState] = useState(false);
 
+  useEffect(() => {
+    const html = document.querySelector("html");
+    if (html) html.classList.toggle("dis-scroll", activeState);
+  }, [activeState]);
+
   const handleClick = () => {
     setActiveState((prev) => !prev);
-    // document.body.classList.add("dis-scroll");
   };
   return (
     <header className={styles.header}>
