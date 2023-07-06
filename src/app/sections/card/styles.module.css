@@ -1,0 +1,110 @@
+.card{
+    margin-block-end: 150px;
+}
+
+.card__title{
+    color: #FFF;
+    text-align: center;
+    font-family: TT Hoves;
+    font-size: clamp(20px, 5vw + 1rem, 60px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-block-end: 40px;
+}
+
+.card__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 30ch), 1fr));
+    gap: 30px;
+    margin-block-end: 30px;
+}
+
+.list__item{
+    border-radius: 11.037px;
+    background: #3D3D3D;
+    max-width: 410px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-block: 25px;
+}
+
+.item__img{
+    border-radius: 11.037px;
+    background: linear-gradient(227deg, #CACACA 0%, #F5F5F5 40.78%, #FDFDFD 100%);
+    overflow: hidden;
+    margin-block-end: 18px;
+}
+
+.item__title{
+    color: #FFF;
+    text-align: center;
+    font-family: TT Hoves;
+    font-size: 22.074px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-block-end: 30px;
+}
+
+.item__desription{
+    color: #FFF;
+    text-align: center;
+    font-family: TT Hoves;
+    font-size: 17.659px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.item__desription:nth-child(4){
+    margin-block: 12px;
+    padding-block: 22px;
+    border-block-end: 1px solid rgba(230, 230, 230, 0.10);
+    border-block-start: 1px solid rgba(230, 230, 230, 0.10);
+    width: 80%;
+}
+
+.item__desription:nth-child(4):has(br){
+    padding-block: 10px;
+}
+
+.list__description{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 35ch), 1fr));
+    gap: 30px;
+}
+
+.descr__item{
+    border-radius: 10px;
+    border: 1px solid rgba(32, 32, 32, 0.70);
+    background: rgba(32, 32, 32, 0.00);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 20px 38px;
+}
+
+.descr__img{
+
+}
+
+.descr__title{
+    color: #FFF;
+    text-align: center;
+    font-family: TT Hoves;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 222px;
+}

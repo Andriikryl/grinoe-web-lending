@@ -43,7 +43,7 @@
 
 .app__title{
     color: var(--white, #FFF);
-    font-size: 60px;
+    font-size: clamp(20px, 5vw + 1rem, 60px);
     font-family: TT Hoves;
     font-style: normal;
     font-weight: 500;
