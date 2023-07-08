@@ -1,0 +1,74 @@
+.faq{
+    margin-block-end: 200px;
+}
+
+.faq__title{
+    color: var(--white, #FFF);
+    font-family: TT Hoves;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-block-end: 40px;
+}
+
+.accordion__title{
+    color: var(--gray, #B3B3B3);
+    font-family: TT Hoves;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-block-end: 40px;
+    position: relative;
+    top: 10px;
+    margin-inline-start: 70px;
+}
+
+.accordion__button{
+display: flex;
+align-items: center;
+justify-content: space-between;
+cursor: pointer;
+}
+
+.accordion__item{
+    padding-block: 20px;
+    border-block-end: 1px solid rgba(230, 230, 230, 0.20);
+    position: relative;
+}
+
+.accordion{
+    counter-reset: item;
+}
+
+.accordion__item::before {
+    counter-increment: item; 
+    content: '' counter(item) '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background: var(--green, #BFEA81);
+    color: var(--black, #0F0F0F);
+    font-family: TT Hoves;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+
+.accordion__text{
+    color: #808085;
+    font-family: TT Hoves;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+

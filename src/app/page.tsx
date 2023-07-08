@@ -3,6 +3,7 @@ import AppNeed from "./sections/app/AppNeed";
 import Card from "./sections/card/Card";
 import Coins from "./sections/coins/Coins";
 import Currency from "./sections/currency/Currency";
+import Faq from "./sections/faq/Faq";
 import Hero from "./sections/hero/Hero";
 import Partners from "./sections/partners/Partners";
 import Secure from "./sections/secure/Secure";
@@ -21,6 +22,7 @@ export default function Home() {
       <Solution />
       <Use />
       <Secure />
+      <Faq />
     </>
   );
 }
