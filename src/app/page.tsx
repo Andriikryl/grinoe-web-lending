@@ -5,7 +5,9 @@ import Coins from "./sections/coins/Coins";
 import Currency from "./sections/currency/Currency";
 import Hero from "./sections/hero/Hero";
 import Partners from "./sections/partners/Partners";
+import Secure from "./sections/secure/Secure";
 import Solution from "./sections/solution/Solution";
+import Use from "./sections/use/Use";
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
       <Card />
       <Currency />
       <Solution />
+      <Use />
+      <Secure />
     </>
   );
 }
