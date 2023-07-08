@@ -1,5 +1,7 @@
 .partners{
-    margin-block-end: 200px;
+  margin-block-end: clamp(30px, 5vw + 2rem, 200px);
+  content-visibility: auto;
+  contain-intrinsic-size: 1000px;
 }
 
 .partners__title{

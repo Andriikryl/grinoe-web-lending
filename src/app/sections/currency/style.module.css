@@ -1,12 +1,14 @@
 .currency{
-    margin-block-end: 200px;
+    margin-block-end: clamp(30px, 5vw + 2rem, 200px);
+    content-visibility: auto;
+    contain-intrinsic-size: 1000px;
 }
 
 .currency__title{
     color: var(--white, #FFF);
     text-align: center;
     font-family: TT Hoves;
-    font-size: 60px;
+    font-size: clamp(24px, 5vw + 1rem, 60px);
     font-style: normal;
     font-weight: 500;
     line-height: normal;

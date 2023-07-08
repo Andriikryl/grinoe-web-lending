@@ -1,5 +1,7 @@
 .faq{
-    margin-block-end: 100px;
+    margin-block-end: clamp(30px, 5vw + 2rem, 100px);
+    content-visibility: auto;
+    contain-intrinsic-size: 1000px;
 }
 
 .faq__title{
@@ -41,7 +43,7 @@ cursor: pointer;
 
 .accordion{
     counter-reset: item;
-    margin-block-end: 100px;
+    margin-block-end: 100px;;
 }
 
 .accordion__item::before {

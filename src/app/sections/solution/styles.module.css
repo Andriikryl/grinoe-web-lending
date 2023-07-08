@@ -1,12 +1,15 @@
 .solution{
-    margin-block-end: 150px;
+    margin-block-end: clamp(30px, 5vw + 2rem, 150px);
+    content-visibility: auto;
+    contain-intrinsic-size: 1000px;
 }
 
 .solution__title{
     color: var(--white, #FFF);
     text-align: center;
     font-family: TT Hoves;
-    font-size: 60px;
+    font-size: clamp(24px, 5vw + 1rem, 60px);
+    margin-block-end: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;

@@ -1,5 +1,7 @@
 .card{
-    margin-block-end: 150px;
+    margin-block-end: clamp(30px, 5vw + 2rem, 150px);
+    content-visibility: auto;
+    contain-intrinsic-size: 1000px;
 }
 
 .card__title{
