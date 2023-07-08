@@ -11,6 +11,8 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 import Plus from "@/app/icons/Plus";
+import AppBtn from "@/app/components/btns/AppBtn";
+import GoogleBtn from "@/app/components/btns/GoogleBtn";
 
 export default function Faq() {
   return (
@@ -139,6 +141,10 @@ export default function Faq() {
               </AccordionItemPanel>
             </AccordionItem>
           </Accordion>
+          <div className={styles.btn__group}>
+            <AppBtn />
+            <GoogleBtn />
+          </div>
         </div>
       </Container>
     </section>

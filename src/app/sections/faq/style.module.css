@@ -1,5 +1,5 @@
 .faq{
-    margin-block-end: 200px;
+    margin-block-end: 100px;
 }
 
 .faq__title{
@@ -41,6 +41,7 @@ cursor: pointer;
 
 .accordion{
     counter-reset: item;
+    margin-block-end: 100px;
 }
 
 .accordion__item::before {
@@ -72,3 +73,9 @@ cursor: pointer;
     line-height: 140%;
 }
 
+.btn__group{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
